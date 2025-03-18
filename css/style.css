@@ -1,0 +1,207 @@
+.img1{
+    margin-right: 9100px;
+  transform: scale(0.5);
+  height: auto;
+  margin-top: -400px;
+  margin-left: 100px;
+}
+.scale {
+    transition: 1s; 
+   }
+   .scale:hover {
+    transform: scale(1.1); 
+   }
+.me{
+    margin-top: -370px;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #1a1a1a, #2c3e50);
+    color: #fff;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+   
+}
+
+h1 {
+    font-size: 3.5em;
+    text-align: center;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradientText 5s ease infinite;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 2.2em;
+    color: #ff9a9e;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+    border-radius: 2px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #ff9a9e;
+    font-weight: bold;
+}
+
+.quote {
+    font-style: italic;
+    color: #c2e9fb;
+    border-left: 4px solid #ff9a9e;
+    padding-left: 15px;
+    margin: 25px 0;
+    font-size: 1.3em;
+}
+
+.section {
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+.section:nth-child(2) { animation-delay: 0.2s; }
+.section:nth-child(3) { animation-delay: 0.4s; }
+.section:nth-child(4) { animation-delay: 0.6s; }
+.section:nth-child(5) { animation-delay: 0.8s; }
+.section:nth-child(6) { animation-delay: 1s; }
+.section:nth-child(7) { animation-delay: 1.2s; }
+.section:nth-child(8) { animation-delay: 1.4s; }
+.section:nth-child(9) { animation-delay: 1.6s; }
+
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1em;
+    color: #888;
+}
+
+.merch-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.merch-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border-left: 4px solid #ff9a9e;
+    padding: 15px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.merch-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.merch-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.merch-item h3 {
+    font-size: 1.4em;
+    color: #ff9a9e;
+    margin: 10px 0;
+}
+
+.merch-item p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.merch-item a {
+    display: inline-block;
+    background: #ff9a9e;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.merch-item a:hover {
+    background: #fad0c4;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 4px solid #ff9a9e;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-list li:hover {
+    transform: translateX(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-list li a {
+    color: #ff9a9e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-list li a:hover {
+    text-decoration: underline;
+}
+
+/* Анимации */
+@keyframes gradientText {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Подключение шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
